@@ -1,73 +1,61 @@
 <!DOCTYPE html>
-<html lang="tr" >
-<head>
-  <meta charset="UTF-8">
-  <title>DÜ-Öğrenci Bilgi Sistemi</title>
-  <!--Tasarımda kullanılan "Alata" fontu için gereken bağlantılardır.-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
-  <!--Ana CSS dosyamızın bağlantısıdır.-->
-  <link rel="stylesheet" href="css/du-stylesheet.css">
-  <!--Sosyal medya ikonları için gereken bağlantıdır.-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <!--Mobil cihazların uyumluluğu için gerekli (Dipnot : Tema henüz "Responsive" tasarımda değildir.)-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <!--Ana CSS Dosyası-->
+    <link rel="stylesheet" href="css/du-stylesheet.css">
+    <!-- Sosyal medya butonları içind Fontawesome CDN linki -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-<div class="container">
-  <div class="form sign-in">
-    <div class="logo-div">
-      <img class="logo" src="css/img/du-logo-new.png">
-    </div>
-    <hr class="divider-round-top">
-    <form action="">
-      <label>
-        <input type="text" name="username" placeholder="Kullanıcı Adı" />
-      </label>
-      <label>
-        <input type="password" name="password" placeholder="Şifre" />
-      </label> 
-      <a href="#" class="forgot-pass">Şifremi unuttum?</a>
-      <button type="submit" name="login" class="submit">GİRİŞ YAP</button>
-      <button type="submit" name="eDevlet" class="e-devlet"></button>
-    </form>
-    <hr class="divider-round-bottom">
-    <div class="social-icons">
-      <a href="https://www.facebook.com/DuzceUniversite" target="_blank" class="fab fa-facebook-f"></a>
-      <a href="https://www.instagram.com/duzceuniversite/" target="_blank"  class="fab fa-instagram"></a>
-      <a href="http://www.youtube.com/duzceuniversite" target="_blank" class="fab fa-youtube"></a>
-      <a href="https://twitter.com/duzceuniversite" target="_blank" class="fab fa-twitter"></a>
-    </div>
-      <h3 class="copyright">Copyright <b>&copy;</b> Düzce Üniversitesi | Bilgi İşlem Daire Başkanlığı</h3>
-  </div>
-  <div class="sub-container">
-    <div class="img">
-      <!--Duyurular panosu içindir. Herhangi bir duyuru olmaz ise kaldırabilirsiniz.-->
-      <div class="img__text m--up">
-        <h1>DUYURULAR</h1>
-        <h4>ULUSAL STAJ PROGRAMI (USP) METNİ</h4>
-        <p><b>Sevgili Öğrencilerimiz; </b></p>
-        <p>Kamuda staj yapmak istiyorsanız Cumhurbaşkanlığı İnsan Kaynakları Ofisi tarafından; 
-          gençlere fırsat eşitliği çerçevesinde ve liyakat esaslarına uygun olarak kamu kurumları ve özel sektör kuruluşlarınca sunulan staj olanaklarından faydalanmalarını 
-          sağlamak adına Ulusal Staj Programı (USP) başlatılmıştır. KAMU KURUM VE KURULUŞLARINDA YAPILACAK STAJLAR USP ARACILIĞI İLE GERÇEKLEŞTİRİLECEKTİR.</p>
-          <p>Kimler başvurabilir.</p>
-          <p>Örgün eğitim veren lisans programlarının 2., 3. veya 4. sınıf öğrencileri 
-            (lisans 2. sınıf öğrencilerinde staj yapacağı tarihte bir üst sınıfa geçme ve 4. sınıf öğrencilerinde staj yapacağı tarihte henüz mezun olmama şartları aranmaktadır)</p>
-          <p>Ön lisans programlarının 1. veya 2. sınıf öğrencileri 
-            (ön lisans 1. sınıf öğrencilerinde staj yapacağı tarihte bir üst sınıfa geçme ve 2. sınıf öğrencilerinde staj yapacağı tarihte henüz mezun olmamış bulunma şartı aranmaktadır)</p>
-          <p>Yurt içinde öğrenimine devam eden yüksek lisans öğrencileri 
-            (not ortalaması 4 üzerinden en az 2 veya diğer sistemlerde dengi) ile yurt dışında yüksek lisans/doktora eğitimine devam eden Türk Vatandaşı veya Mavi Kart sahibi öğrenciler.</p>
-          <p>Programa son başvuru tarihi 31 Mart 2022’dir.</p>
-          <p>Başvuru şartlarını ve program hakkında detaylı bilgi almak için <a class="links" href="kariyerkapisi.cbiko.gov.tr">kariyerkapisi.cbiko.gov.tr</a> adresini ziyaret etmelisiniz.</p>
-          <p>Soru ve sorunlarınızda <a class="links" href="mailto:kariyermerkezi@duzce.edu.tr">kariyermerkezi@duzce.edu.tr</a> adresinden destek alabilirsiniz.</p>
-          <p><a class="links" href="instagram.com/duzcekariyer">Instagram: @duzcekariyer</a></p>
+    <div class="main">
+      <div class="container">
+        <img class="logo" src="css/img/du-logo-new.png">
+        <hr class="divider">
+        <form class="login" action="#">
+          <input type="text" class="login-input" name="duUsername" placeholder="Kullanıcı Adı">
           <br>
+          <input type="text" class="login-input" name="duPassword" placeholder="Şifre">
           <br>
+          <a class="forgot-pass" href="#">Şifremi unuttum?</a>
+          <input type="submit" class="submit" value="Giriş Yap">
+          <input type="submit" class="e-devlet" value="">
+        </form>
+        <hr class="divider">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/DuzceUniversite" target="_blank" class="fab fa-facebook-f"></a>
+          <a href="https://www.instagram.com/duzceuniversite/" target="_blank"  class="fab fa-instagram"></a>
+          <a href="http://www.youtube.com/duzceuniversite" target="_blank" class="fab fa-youtube"></a>
+          <a href="https://twitter.com/duzceuniversite" target="_blank" class="fab fa-twitter"></a>
+        </div>
+        <h3 class="copyright">Copyright <b>&copy;</b> Düzce Üniversitesi | Bilgi İşlem Daire Başkanlığı</h3>
+      </div>
+      <div class="sub-container">
+        <div class="img">
+          <div class="img-text">
+            <h1>DUYURULAR</h1>
+            <h4>ULUSAL STAJ PROGRAMI (USP) METNİ</h4>
+            <p><b>Sevgili Öğrencilerimiz; </b></p>
+            <p>Kamuda staj yapmak istiyorsanız Cumhurbaşkanlığı İnsan Kaynakları Ofisi tarafından; 
+              gençlere fırsat eşitliği çerçevesinde ve liyakat esaslarına uygun olarak kamu kurumları ve özel sektör kuruluşlarınca sunulan staj olanaklarından faydalanmalarını 
+              sağlamak adına Ulusal Staj Programı (USP) başlatılmıştır. KAMU KURUM VE KURULUŞLARINDA YAPILACAK STAJLAR USP ARACILIĞI İLE GERÇEKLEŞTİRİLECEKTİR.</p>
+              <p>Kimler başvurabilir.</p>
+              <p>Örgün eğitim veren lisans programlarının 2., 3. veya 4. sınıf öğrencileri 
+                (lisans 2. sınıf öğrencilerinde staj yapacağı tarihte bir üst sınıfa geçme ve 4. sınıf öğrencilerinde staj yapacağı tarihte henüz mezun olmama şartları aranmaktadır)</p>
+              <p>Ön lisans programlarının 1. veya 2. sınıf öğrencileri 
+                (ön lisans 1. sınıf öğrencilerinde staj yapacağı tarihte bir üst sınıfa geçme ve 2. sınıf öğrencilerinde staj yapacağı tarihte henüz mezun olmamış bulunma şartı aranmaktadır)</p>
+              <p>Yurt içinde öğrenimine devam eden yüksek lisans öğrencileri 
+                (not ortalaması 4 üzerinden en az 2 veya diğer sistemlerde dengi) ile yurt dışında yüksek lisans/doktora eğitimine devam eden Türk Vatandaşı veya Mavi Kart sahibi öğrenciler.</p>
+              <p>Programa son başvuru tarihi 31 Mart 2022’dir.</p>
+              <p>Başvuru şartlarını ve program hakkında detaylı bilgi almak için <a class="links" href="kariyerkapisi.cbiko.gov.tr">kariyerkapisi.cbiko.gov.tr</a> adresini ziyaret etmelisiniz.</p>
+              <p>Soru ve sorunlarınızda <a class="links" href="mailto:kariyermerkezi@duzce.edu.tr">kariyermerkezi@duzce.edu.tr</a> adresinden destek alabilirsiniz.</p>
+              <p><a class="links" href="instagram.com/duzcekariyer">Instagram: @duzcekariyer</a></p>
+              <br>
+              <br>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 </body>
 </html>
